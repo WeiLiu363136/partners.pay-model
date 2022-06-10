@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>水费缴费</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="CSS5, css5.com.cn" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <style>
+    body{font-size:62.5%;font-family:"Microsoft YaHei",Arial; overflow-x:hidden; overflow-y:auto;}
+    .viewport{ max-width:640px; min-width:300px; margin:0 auto;}
+    </style>
+</head>
+<body class="home">
+   
+    <div class="body">
+        <div class="head">
+        <div class="img">
+         <!-- <img id="img" src="../../static/chongzhi.png" alt=""> -->
+        </div>
+         <h3>当前余额 :<span class="glyphicon glyphicon-jpy" aria-hidden="true" style="color:rgb(238, 116, 50) ;"><small>0.00元</small></span></h3>
+        <hr>
+         <h3> <p class="text-left">缴费户名 <small>江西派能科技有限公司</small></p></h3>
+         <h3><p class="text-left">缴费户号 <small>20518411</small></p></h3>
+         <h3><p class="text-left">缴费单位 <small>江西省南昌市水费缴费网点</small></p></h3>
+        <hr>
+
+        <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+              <div class="input-group">
+                <div class="input-group-addon">¥</div>
+                <input type="tel" class="form-control" id="exampleInputAmount" placeholder="请输入金额">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+           
+          </form>
+           <div class="onpay">
+            <select class="form-control">
+                <option>请选择支付的银行卡</option>
+                <option>中国银行:629***********1515</option>
+                <option>中国工商银行:629***********1515</option>
+                <option>中国邮政储蓄银行:629***********1515</option>
+                <option>中国建设银行:629***********1515</option>
+              </select>
+        </div>
+        <div class="checkbox">
+            <label>
+              <input type="checkbox" > 我已阅读相关支付协议
+            </label>
+          </div>
+    </div>
+    
+      
+    </div>
+        
+    
+    <div class="but">
+       <a href="../mod/end.html"> <button type="button" class="btn btn-primary btn-lg">确认提交</button></a>
+    </div> 
+    <div class="row">
+        <div class="col-xs-6 ">
+          <a href="#"><p>查看历史缴费</p></a>
+        </div>
+        <div class="col-xs-4 ">
+           <a href="#"><p>点我生成发票</p></a>
+        </div>
+      </div>
+</body>
+</html>
+<style>
+    .row{
+        text-align: center;
+        margin-top: 30%;
+    }
+    .row a {
+        font-size: 15px;
+    }
+    .but{
+        text-align: center;
+        margin-top: 20%;
+    }
+    .img{
+        position: absolute;
+        margin: -30px ;
+        /* text-align: center; */
+        /* left: 50%; */
+        /* right: 50%; */
+        width: 40px;
+        height: 50px;
+        /* padding-top: -20px; */
+    }
+    #img{
+        position: absolute;
+        margin: -30px ;
+        /* text-align: center; */
+        /* left: 50%; */
+        /* right: 50%; */
+        width: 40px;
+        height: 50px;
+        /* padding-top: -20px; */
+    }
+ html, body { color:#222; font-family:Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif; margin:0; padding: 0; text-decoration: none; }
+ body {
+        background-color:#eee; 
+    }
+    .body{
+        text-align: center;
+        width: 90%;
+        height: 450px;
+        border: 2px solid white;
+        margin: auto;
+        margin-top: 30%;
+        background-color: white;
+    }
+    .head{
+        margin-top: 20%;
+    }
+</style>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>

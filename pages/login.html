@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>公共企业缴费平台</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="CSS5, css5.com.cn" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <style>
+    body{font-size:62.5%;font-family:"Microsoft YaHei",Arial; overflow-x:hidden; overflow-y:auto;}
+    .viewport{ max-width:640px; min-width:300px; margin:0 auto;}
+    </style>
+</head>
+<body class="login">
+    <div class="jumbotron">
+        <h1 id="jumh1" style="text-align:center;">添加银行卡</h1>
+        <p style="color: red;text-align:center;">以下仅为演示使用，可随意输入</p>
+        <p id="p2"><button type="button" class="btn btn-lg btn-danger" data-toggle="popover" ><a href="#" style="color: white;">有疑问请点我</a></button></p>
+      </div>
+    <div class="input">
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">户名</span>
+        <input type="text" class="form-control" placeholder="请输入您的账户名称" aria-describedby="sizing-addon1">
+      </div>
+      
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">卡号</span>
+        <input type="text" class="form-control" placeholder="请输入你的银行卡卡号" aria-describedby="sizing-addon1">
+      </div>
+    </div>
+    <!-- <input id="type" type="text" list="typelist" placeholder="请选择"> -->
+    <!-- <div class="list">
+<p>银行类别</p><datalist id="typelist">
+<option>中国人民银行</option>
+<option>中国农业银行</option>
+<option>中国邮政储蓄银行</option>
+<option>中国建设银行</option>
+<option>中国工商银行</option>
+
+
+</datalist>
+</div> -->
+<div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>请选择一个银行类别</strong>Please select a bank category
+  </div>
+<div class="list-group">
+    <a href="#" class="list-group-item">中国银行</a>
+    <a href="#" class="list-group-item">中国农业银行</a>
+    <a href="#" class="list-group-item">中国邮政储蓄银行</a>
+    <a href="#" class="list-group-item">中国建设银行</a>
+    <a href="#" class="list-group-item">中国工商银行</a>
+    <a href="#" class="list-group-item disabled">
+        其他银行
+      </a>
+  </div>
+    <!--  -->
+    <div class="but">
+    <a href="../pages/index.html" class="btn btn-primary btn-lg " role="button">确定提交</a>
+
+    </div>
+    
+</body>
+</html>
+<style>
+    .but{
+        text-align: center;
+        margin-top: 10%;
+    }
+    #p2{
+        margin-left: 60%;
+    }
+    #jumh1{
+      
+       
+        color: white;
+     
+    }
+    .jumbotron{
+        height: 250px;
+        background: url("../static/back.jpg");
+    }
+
+    
+</style>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
