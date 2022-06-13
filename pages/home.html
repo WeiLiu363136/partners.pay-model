@@ -17,11 +17,47 @@
     </style>
 </head>
 <body class="home">
+    <div class="head">    
+    </div>
     <div class="img">
-        <img src="../static/back.jpg" alt="" style="width: 600px; height:300px ;">
+        <div class="alert alert-info" role="alert">
+            <div class="media">
+                <div class="media-left media-middle">
+                  <a href="#">
+                    <img class="media-object" src="../static/paymoney.png" alt="..." style="width: 40px; height:40px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">你有一笔新的缴费通知单...</h4>
+                  2021-12-15
+                </div>
+                <hr>
+                <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object" src="../static/list.png" alt="..." style="width: 40px; height:40px;">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">电子发票已经发送至您的邮箱...</h4>
+                    2021-12-03
+                  </div>
+                  <hr>
+                  <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object" src="../static/pay.png" alt="..." style="width: 40px; height:40px;">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"><span>当前账户余额：<span id="pd">0.00</span>元</span></h4>
+                  
+                  </div>
+              </div>
+              
+        </div>
+     
     </div>
     <div class="body">
-  <div class="well"><ul class="nav nav-tabs">
+  <div class="well" style="height: 100px;"><ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#">企业中心</a></li>
     <li role="presentation"><a href="#">提交记录</a></li>
     <li role="presentation"><a href="../pages/login.html
@@ -45,6 +81,9 @@
 </body>
 </html>
 <style>
+    #pd{
+        font-weight: 900;
+    }
   
  html, body { color:#222; font-family:Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif; margin:0; padding: 0; text-decoration: none; }
     img { border:0; }
@@ -88,7 +127,9 @@
     }
     .img{
         width: 600px;
-        height: 300;
+        height: 235px;
+        /* background-image: url("../static/bg.jpg"); */
+        
     }
 </style>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>

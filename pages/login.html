@@ -18,8 +18,7 @@
 </head>
 <body class="login">
     <div class="jumbotron">
-        <h1 id="jumh1" style="text-align:center;">添加银行卡</h1>
-        <p style="color: red;text-align:center;">以下仅为演示使用，可随意输入</p>
+        <h1 id="jumh1" style="text-align:center;">请添加银行卡</h1>
         <p id="p2"><button type="button" class="btn btn-lg btn-danger" data-toggle="popover" ><a href="#" style="color: white;">有疑问请点我</a></button></p>
       </div>
     <div class="input">
@@ -33,22 +32,12 @@
         <input type="text" class="form-control" placeholder="请输入你的银行卡卡号" aria-describedby="sizing-addon1">
       </div>
     </div>
-    <!-- <input id="type" type="text" list="typelist" placeholder="请选择"> -->
-    <!-- <div class="list">
-<p>银行类别</p><datalist id="typelist">
-<option>中国人民银行</option>
-<option>中国农业银行</option>
-<option>中国邮政储蓄银行</option>
-<option>中国建设银行</option>
-<option>中国工商银行</option>
-
-
-</datalist>
-</div> -->
+ 
 <div class="alert alert-warning alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <strong>请选择一个银行类别</strong>Please select a bank category
   </div>
+  
 <div class="list-group">
     <a href="#" class="list-group-item">中国银行</a>
     <a href="#" class="list-group-item">中国农业银行</a>
@@ -70,7 +59,7 @@
 <style>
     .but{
         text-align: center;
-        margin-top: 10%;
+        /* margin-top: 10%; */
     }
     #p2{
         margin-left: 60%;
@@ -82,9 +71,12 @@
      
     }
     .jumbotron{
-        height: 250px;
-        background-image: url("../static/back.jpg");
+        height: 200px;
+        background-image: url("../static/bg.jpg");
         
+    }
+    #p2{
+        padding-top: 40px;
     }
 
     
