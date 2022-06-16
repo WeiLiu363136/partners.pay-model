@@ -15,6 +15,14 @@
     body{font-size:62.5%;font-family:"Microsoft YaHei",Arial; overflow-x:hidden; overflow-y:auto;}
     .viewport{ max-width:640px; min-width:300px; margin:0 auto;}
     </style>
+    <script>
+          function getNum(){
+            var num = document.getElementById('exampleInputAmount').value;
+            var url ='end.html?num='+num;
+            url=encodeURI(url);
+            window.location=url;
+        }
+    </script>
 </head>
 <body class="home">
    
@@ -43,7 +51,7 @@
           </form>
            <div class="onpay">
             <select class="form-control input-lg">
-                <option >请选择支付的银行卡</option>
+                <option>请选择支付的银行卡</option>
                 <option>中国银行:629***********1515</option>
                 <option>中国工商银行:629***********1515</option>
                 <option>中国邮政储蓄银行:629***********1515</option>
@@ -53,7 +61,16 @@
         <div class="checkbox">
             <label>
               <input type="checkbox" > 我已阅读相关支付协议
+             
             </label>
+            
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" > 点击开启自动代扣功能
+             
+            </label>
+            
           </div>
     </div>
     
@@ -62,7 +79,7 @@
         
     
     <div class="but">
-       <a href="../mod/end.html"> <button type="button" class="btn btn-primary btn-lg">确认提交</button></a>
+     <button type="button" class="btn btn-primary btn-lg" onclick="getNum()">确认提交</button>
     </div> 
     <div class="row">
         <div class="col-xs-6 ">
@@ -111,7 +128,7 @@
     .body{
         text-align: center;
         width: 90%;
-        height: 450px;
+        height: 470px;
         border: 2px solid white;
         margin: auto;
         margin-top: 10%;

@@ -15,15 +15,26 @@
     body{font-size:62.5%;font-family:"Microsoft YaHei",Arial; overflow-x:hidden; overflow-y:auto;}
     .viewport{ max-width:640px; min-width:300px; margin:0 auto;}
     </style>
+     <script>
+        function getNum(){
+           var agr = window.location.href.split("=")[1];
+            document.getElementById('num').innerText='¥'+agr;
+            var num ='¥'+agr+'.00';
+            console.log(num)
+            // $("#num").val(num)
+          
+        }
+    
+        </script>
 </head>
-<body class="end">
+<body class="end" onload="getNum()">
     <div class="body">
         <div class="img">
         <img src="../../static/surr.png" alt="">
     </div>
     <div class="msg">
         <h3>江西省南昌市水费缴费网点</h4>
-            <h1 style="font-weight: 600;">¥300.00</h1>
+            <h1 id="num" style="font-weight: 600;">
     </div>
     <div class="but">
         <a href="../home.html"> <button type="button" class="btn btn-success">缴费成功</button></a>

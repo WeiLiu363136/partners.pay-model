@@ -28,6 +28,13 @@
         function del(){
             document.getElementById('exampleInputAmount').value='请输入金额';
         }
+        function getNum(){
+            var num = document.getElementById('exampleInputAmount').value;
+            var url ='end.html?num='+num;
+            url=encodeURI(url);
+            window.location=url;
+        }
+        
     </script>
 </head>
 <body class="home">
@@ -76,6 +83,11 @@
               <input type="checkbox" > 我已阅读相关支付协议
             </label>
           </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" > 点击开启自动代扣功能
+            </label>
+          </div>
     </div>
     
       
@@ -83,7 +95,7 @@
         
     
     <div class="but">
-       <a href="../recharge/end.html"> <button type="button" class="btn btn-primary btn-lg" >确认提交</button></a>
+     <button type="button" class="btn btn-primary btn-lg" onclick="getNum()" >确认提交</button>
     </div> 
 
 
